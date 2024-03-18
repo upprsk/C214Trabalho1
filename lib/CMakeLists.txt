@@ -8,4 +8,4 @@ target_link_libraries(lib PRIVATE fmt)
 target_link_libraries(lib PUBLIC nlohmann_json::nlohmann_json)
 
 # All users of this library will need at least C++20
-target_compile_features(lib PUBLIC cxx_std_20)
+target_compile_features(lib PUBLIC cxx_std_17)
