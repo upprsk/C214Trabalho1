@@ -33,14 +33,6 @@ include(FetchContent)
 # find_package(Boost REQUIRED)
 # Adds Boost::boost
 
-# Formatting library
-FetchContent_Declare(
-  fmtlib
-  GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-  GIT_TAG 10.2.0)
-FetchContent_MakeAvailable(fmtlib)
-# Adds fmt::fmt
-
 # JSON library
 FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
 FetchContent_MakeAvailable(json)

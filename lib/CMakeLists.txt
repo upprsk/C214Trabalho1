@@ -4,7 +4,6 @@ set(HEADER_LIST include/lib.hpp include/common.hpp)
 add_library(lib lib.cpp ${HEADER_LIST})
 
 target_include_directories(lib PUBLIC include)
-target_link_libraries(lib PRIVATE fmt)
 target_link_libraries(lib PUBLIC nlohmann_json::nlohmann_json)
 
 # All users of this library will need at least C++20
