@@ -2,6 +2,8 @@
 lang: pt-BR
 ---
 
+![GitHub Actions](https://github.com/upprsk/C214Trabalho1/actions/workflows/tests.yml/badge.svg)
+
 # Trabalho 1
 
 Teste uma classe responsável por popular uma página WEB com informações
