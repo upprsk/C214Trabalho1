@@ -45,6 +45,8 @@ jobs:
 
   ntfy:
     runs-on: ubuntu-latest
+    needs: test
+
     steps:
       - name: Send notification for success
         run: curl -d "Tests ran successfully 😀" ntfy.sh/the-build-status-ntfy
