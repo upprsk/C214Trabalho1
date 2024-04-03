@@ -42,3 +42,9 @@ jobs:
         # Execute tests defined by the CMake configuration.
         # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
         run: ctest -C ${{env.BUILD_TYPE}}
+
+  ntfy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification for success
+        run: curl -d "Tests ran successfully 😀" ntfy.sh/the-build-status-ntfy
